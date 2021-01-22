@@ -1,9 +1,9 @@
 # Table of contents
 
-* [README](README.md)
+* [Перед началом](README.md)
 * [Интро](intro.md)
 
-## Взаимодействия
+## Взаимодействия <a id="interactions"></a>
 
-* [Слеш Команды](vzaimodeistviya/slesh-komandy.md)
+* [Слеш Команды](interactions/slash-commands.md)
 

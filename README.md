@@ -3,7 +3,7 @@ title: Перед началом...
 description: 'Перед началом прочтения, узнай, откуда это!'
 ---
 
-# README
+# Перед началом
 
 [![Discord](https://img.shields.io/discord/802069214994890774?label=%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D1%80%D0%B4)](https://discord.gg/bvU7aQxpWN)
 
