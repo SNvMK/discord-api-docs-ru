@@ -5,5 +5,5 @@
 
 ## Взаимодействия
 
-* [Слэш Команды](vzaimodeistviya/slesh-komandy.md)
+* [Слеш Команды](vzaimodeistviya/slesh-komandy.md)
 
