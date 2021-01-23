@@ -6,4 +6,9 @@ description: Список для документирования
 
 * [ ] Доделать [Слеш Команды](interactions/slash-commands.md)
 * [ ] Сделать остальные секции
+  * [ ] Ресурсы
+  * [ ] Темы
+  * [ ] GameSDK
+  * [ ] Rich Presence
+  * [ ] Dispatch
 
