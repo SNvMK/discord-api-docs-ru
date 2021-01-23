@@ -51,7 +51,7 @@ description: >-
 }
 ```
 
-{% api-method method="post" host="" path="/channels/{ID\_канала}/webhooks" %}
+{% api-method method="post" host="" path="/channels/:id/webhooks" %}
 {% api-method-summary %}
 Создать вебхук
 {% endapi-method-summary %}
@@ -81,7 +81,9 @@ description: >-
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    <webhook object>
+}
 ```
 {% endapi-method-response-example %}
 
@@ -91,14 +93,14 @@ description: >-
 {% endapi-method-response-example-description %}
 
 ```
-
+{"message": "The request was improperly formatted, or the server couldn't understand it.", "code": 0}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="" path="/channels/:id/webhooks" %}
 {% api-method-summary %}
 Получить вебхуки канала
 {% endapi-method-summary %}
@@ -117,13 +119,34 @@ description: >-
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
+{% api-method-response-example-description %}
+Возвращает список из объектов вебхука
+{% endapi-method-response-example-description %}
+
+```
+[
+    {
+    <webhook object>
+    },
+    {
+    <webhook object 2>
+    },
+    ...,
+    {
+    <webhook object N>
+    }
+]
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
 
 ```
-
+{"message": "Unknown channel", "code": 10003}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
